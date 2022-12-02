@@ -1,21 +1,25 @@
 ПРАКТИЧЕСКАЯ РАБОТА №4
 Тема: «Реализация изменения состояния приложения при помощи Cubit»
 Цель работы: создать проект с использованием Cubit. Реализовать кликер если светлая тема за клик прибавляет +1 если темная тема прибавляется +2. Реализовать список нажатий и при какой теме это было реализовано.
- ![image](https://user-images.githubusercontent.com/76443145/204616722-c7b00482-d365-49bf-817e-bc763eb1943d.png)
+
+
+![image](https://user-images.githubusercontent.com/76443145/205233538-979735b7-f059-4c3d-ba14-20988a8caa55.png)
 
 Рисунок 38 – окно
  
- ![image](https://user-images.githubusercontent.com/76443145/204616743-c58a3d82-79f9-4bfb-86fa-c0bd962ce0f5.png)
+ ![image](https://user-images.githubusercontent.com/76443145/205233566-bb8141f9-477e-4b3d-b52f-14db26365da3.png)
 
 Рисунок 39 – добавление
  
- ![image](https://user-images.githubusercontent.com/76443145/204616755-ea135949-251d-4c6f-8606-555f106f31f5.png)
+ ![image](https://user-images.githubusercontent.com/76443145/205233604-c1f243a6-2169-4fc5-b6ed-e28d6fa48b8d.png)
+
 Рисунок 40 - смена темы
  
- ![image](https://user-images.githubusercontent.com/76443145/204616777-dac7c114-c0e0-4d54-b39f-e137b109526f.png)
+![image](https://user-images.githubusercontent.com/76443145/205233629-bddc49a4-1fe1-401c-af95-a4a58ad1e822.png)
 
 Рисунок 41 - добавление на темной теме
 
- ![image](https://user-images.githubusercontent.com/76443145/204616795-92d14c13-9126-4fe2-87f3-46b18ee799cb.png)
+![image](https://user-images.githubusercontent.com/76443145/205233665-3426d0f3-61de-4bfc-b772-ceefb76688f3.png)
+
 Рисунок 42 - убавление на темной теме
 Вывод: в ходе выполнения данной практической работы был изучен cubit и выполнены соответствующие задания.
