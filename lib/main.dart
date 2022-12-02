@@ -10,6 +10,8 @@ void main() {
 
 List<String> list = <String>[];
 
+String text = text;
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -49,23 +51,47 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(),
-        body: Center(child: BlocBuilder<ListElementsCubit, ListElementsState>(
-          builder: (context, state) {
-            int size = list.length;
-            if (state is CountedSize) {
-              return ListView.builder(
-                itemBuilder: (context, index) {
-                  return Container(
-                    height: 30,
-                    width: 30,
-                    child: Center(child: Text(list.elementAt(index))),
+        body: Center(
+            child: Column(
+          children: <Widget>[
+            BlocBuilder<ListElementsCubit, ListElementsState>(
+              builder: (context, state) {
+                if (state is CountedSize) {
+                  return Text(
+                    context.read<ClickCubit>().count.toString(),
+                    style: Theme.of(context).textTheme.headline4,
                   );
-                },
-                itemCount: size,
-              );
-            }
-            return const Text("Нажмите на одну из кнопок");
-          },
+                }
+                return const Text("");
+              },
+            ),
+            BlocBuilder<ListElementsCubit, ListElementsState>(
+              builder: (context, state) {
+                int size = list.length;
+                if (state is CountedSize) {
+                  return Expanded(
+                    child: ListView.builder(
+                      scrollDirection: Axis.vertical,
+                      shrinkWrap: true,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: 30,
+                          width: 30,
+                          child: Center(
+                              child: Text(
+                            list.elementAt(index),
+                          )),
+                        );
+                      },
+                      itemCount: size,
+                    ),
+                  );
+                }
+                return const Text("Нажмите на одну из кнопок");
+              },
+            ),
+            Spacer()
+          ],
         )),
         floatingActionButton: Padding(
           padding: EdgeInsets.all(20),
